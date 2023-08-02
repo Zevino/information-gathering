@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.tip {
+    display: none;
+    /*position: absolute;*/
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alert_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.alert_box {
+    padding: 30px;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 5;
+    opacity: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.alert_box .icon {
+    height: 100px;
+    width: 100px;
+    color: #f23b26;
+    border: 3px solid #f23b26;
+    border-radius: 50%;
+    line-height: 97px;
+    font-size: 50px;
+}
+
+.alert_box header {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.close h3 {
+    color: #9b59b6;
+}
+
+@media (max-width: 459px) {
+    .tip {
+        font-size: 14px;
+    }
+}

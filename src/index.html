@@ -1,0 +1,118 @@
+<!--
+    Create By ZeeVN
+                    进无止境
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息收集系统</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="alert.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="title-left">信息采集</div>
+            <div class="title-right">
+                <button class="button-example">示例</button>
+            </div>
+        </div>
+        <!--  提示框  -->
+        <div class="tip">
+            <div class="background"></div>
+            <div class="alert_box">
+                <header>示例</header>
+                <div>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">学生姓名</span>
+                            <input type="text" disabled placeholder="Zevin">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">身份证号</span>
+                            <input type="text" disabled placeholder="1234...">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">学生类型</span>
+                            <input type="text" disabled placeholder="院校考生">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">所属院校</span>
+                            <input type="text" disabled placeholder="填写你的学校">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">考核站点</span>
+                            <input type="text" disabled style="font-size: 14px;" value="xxx学校WEB前端开发证书考点">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">考试计划名称</span>
+                            <input type="text" disabled style="font-size: 14px;" value="2021年6月Web前端开发职业技能等级证书考试">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">报考证书</span>
+                            <input type="text" disabled placeholder="Web前端开发职业技能等级证书">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">证书等级</span>
+                            <input type="text" disabled placeholder="请输入你的证书等级">
+                        </div>
+                    </div>
+                    <div class="close">
+                        <p>
+                        <h3>5</h3>秒钟后即将关闭</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <form id="form-information">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">学生姓名</span>
+                        <input type="text" placeholder="请输入你的姓名" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">身份证号</span>
+                        <input type="text" placeholder="请输入身份证号" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">学生类型</span>
+                        <input type="text" placeholder="请输入你的属于的学生类型" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">所属院校</span>
+                        <input type="text" placeholder="请输入你所属的院校" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">考核站点</span>
+                        <input type="text" placeholder="请输入考核站点" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">考试计划名称</span>
+                        <input type="text" placeholder="请输入考试计划名称" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">报考证书</span>
+                        <input type="text" placeholder="请输入你报考的证书等级" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">证书等级</span>
+                        <input type="text" placeholder="请输入你的证书等级" required>
+                    </div>
+                </div>
+
+                <div class="button-myself">
+                    <input id="submit" type="submit" value="点击提交">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
